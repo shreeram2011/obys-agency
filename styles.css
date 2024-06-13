@@ -1,0 +1,121 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    color : white;
+    font-family: "Plain Light";
+}
+
+html, body {
+    width : 100%; 
+    height : 100%;
+}
+
+#loader {
+    height : 100%;
+    width : 100%;
+    position : fixed;
+    z-index : 999;
+    background-color: #030303;
+    padding : 15vh 10vw;
+}
+
+.line {
+    height : fit-content;
+    overflow : hidden;
+    display : flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap : 3vw;
+}
+
+.line-slogan h5{
+    margin-left : 15vw;
+    font-size: 1.4vw;
+}
+
+.line-slogan{
+    overflow: hidden;
+}
+
+#line1-part1 {
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    gap : 1vw;
+}
+
+#line1-part1 h5 {
+    width : 5vw;
+    text-align: right;
+}
+
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 3vw;
+    font-family: "silk serif";
+    font-weight : 100;
+}
+
+.line h1{
+    font-size : 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    
+}
+
+.line h2{
+    font-size: 6.5vw;
+    font-weight: 900;
+    width : fit-content;
+    height : 5vh;
+    text-transform: uppercase;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color : #fff;
+        font-size: 6..5vw;
+        font-weight: 500;
+        opacity : 1;
+    }
+    48%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        font-size: 6.5vw;
+        color : #fff;
+        font-weight: 500;
+        opacity : 0;
+    }
+    50%{
+        font-family: "silk serif";
+        font-size: 6vw;
+        font-weight : 500;
+        -webkit-text-stroke: 1px #fff;
+        color : transparent;
+        opacity : 1;
+    }
+    100%{
+        font-family: "silk serif";
+        font-weight : 500;
+        font-size: 6vw;
+        -webkit-text-stroke: 1px #fff;
+        color : transparent;
+        opacity : 0;
+    }
+}
+
+#main {
+    position : relative;
+    background-color : #030303;
+}
+
+#page1{
+    width : 100%;
+    height : 100vh;
+    background-color : #111;
+}
