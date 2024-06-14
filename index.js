@@ -1,4 +1,5 @@
-
+function loadingloaderanimation(){
+    
 
 
 
@@ -39,3 +40,22 @@ tl.from("#page1",{
 tl.to("#loader",{
     display : "none"
 })
+tl.from("#nav",{
+    opacity : 0
+})
+tl.from(".page1-content h1, .page1-content h2, #hero3",{
+    y : 120,
+    stagger : 0.2
+})
+}
+function cursorAnimation(){
+    document.addEventListener("mousemove",function(dets){
+        gsap.to("#cursor",{
+            left : dets.x,
+            top : dets.y
+        })
+    }) 
+    Shery.makeMagnet("#nav-part2 h4"); 
+}
+loadingloaderanimation();
+cursorAnimation();
