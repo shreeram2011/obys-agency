@@ -153,19 +153,21 @@ html, body {
     font-weight : 400;
 }
 
-.hero{
-    width : 73%;
-    margin-left : 27%;
+
+
+.hero {
+    width: 72%;
+    margin-left: 27%;
     height: fit-content;
-    overflow : hidden;
-    display : flex;
+    overflow-y: hidden;
+    display: flex;
     align-items: center;
-    position : relative;
-    z-index : 9999;
 }
 
-.hero:nth-child(2){
-    margin-top : 18vh;
+
+
+.hero:nth-child(2) {
+    margin-top: 18vh;
 }
 
 .hero h1 {
@@ -176,15 +178,24 @@ html, body {
     position: relative;
 }
 
+#hero1::before {
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: 18%;
+    top: 35%;
+}
+
 .hero h2 {
     font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
     border-bottom: 0.5vw solid #fff;
-    padding-bottom: 0.8vw;
-}
 
+}
 
 
 .hero h2:hover {
@@ -335,4 +346,128 @@ html, body {
     background-color: #111;
     padding : 5vw 0;
 
+}
+
+.elem1{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom : -4vw;
+}
+
+.elem1 h1{
+    display : inline-block;
+    -webkit-text-stroke: 1px #fff;
+    color : transparent;
+    font-weight: 400;
+    font-size: 8vw;
+    text-transform: uppercase;
+    margin-right : 16px;
+    animation-name: anime1;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform : translateX(calc( -100% - 20px));
+    }
+}
+
+.elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom : -4vw;
+}
+
+.elem2 h1{
+    display : inline-block;
+    -webkit-text-stroke: 1px #fff;
+    color : transparent;
+    font-weight: 400;
+    font-size: 8vw;
+    text-transform: uppercase;
+    margin-right : 16px;
+    animation-name: anime1;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.elem1 span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+}
+
+.elem2 span {
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+}
+
+#footer {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    padding-left: 28vw;
+    padding-top: 5vw;
+    padding-right: 2vw;
+    background-color: #111;
+}
+
+#footer h1 {
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#footer h1::before {
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -13%;
+    top: 6%;
+}
+
+#footer .underline {
+    height: 1px;
+    width: 95%;
+    background-color: #fff;
+    margin : 5vw 0;
+}
+
+#footer-div{
+    display : flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right : 11vw;
+}
+
+#footer-div h6 {
+    font-size: 1.1vw;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+}
+
+.box {
+    width: 20%;
+}
+
+#footer-div h5 {
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+#footer > h5 {
+    font-weight: 500;
+    font-size: 1vw;
+    margin-top : -2vw;
+    padding-bottom : 2vw;
 }
