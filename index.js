@@ -1,8 +1,4 @@
 function loadingloaderanimation(){
-    
-
-
-
 let tl = gsap.timeline();
 tl.from(" .line h1, .line-slogan h5, .line h2",{
     y : 150,
@@ -43,7 +39,7 @@ tl.to("#loader",{
 tl.from("#nav",{
     opacity : 0
 })
-tl.from(".page1-content h1, .page1-content h2, #hero3",{
+tl.from("#hero1 h1, #hero2 h1, #hero3 h2, #hero4 h1, #hero3 h1",{
     y : 120,
     stagger : 0.2
 })
