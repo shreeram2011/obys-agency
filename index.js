@@ -167,10 +167,10 @@ function flagAnimation() {
       })
     })
   
-  }
+}
+  
 loadingloaderanimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryjsanimation();
 flagAnimation();
-
