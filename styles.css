@@ -238,13 +238,6 @@ html, body {
     font-size : 2vw;
 }
 
-/* #video-container img{
-    position:absolute;
-    top:0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
 #video-container video{
     width : 100%;
@@ -698,4 +691,18 @@ html, body {
     z-index: 9999999 !important;
     pointer-events: none;
 
+}
+
+#flag{
+    position : absolute;
+    top : 0;
+    left : 0;
+    height : 25vw;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+#hero3, #hero2, #hero4{
+    position: relative;
+    z-index : 999;
 }
